@@ -42,3 +42,43 @@
     font-size: 1.6rem;
 }
 
+
+.sidedrawer__links > li > a:hover{
+    background: #f473adef;
+    color: white;
+}
+
+.sidedrawer__links > li > a > span {
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+
+}
+
+.sidedrawer__cartbadge{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1rem;
+    margin-left: 8px;
+
+
+}
+
+.sidedrawer__links > li > a:hover .sidedrawer__cartbadge{
+    background: white;
+    color: #f473adef;
+}
+
+@media (min-width: 960px) {
+    .sidedrawer{
+        display: none;
+    } 
+}
+

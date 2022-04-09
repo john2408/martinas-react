@@ -1,7 +1,7 @@
 .navbar{
     width: 100%;
     height: 110px;
-    background-color: #f473adef;;
+    background-color: #f473adef;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,21 +66,21 @@
 
 }
 
-.hamburger__menu{
+.hamburger__menu {
+    display: none;
     width: 30px;
     height: 30px;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
-}
+  }
 
 .hamburger__menu > div {
     width: 100%;
     height: 3px;
-    background: white;
-}
+    background: #f4f4f4;
+  }
 
 .hamburger__menu:hover > div{
     background: rgba(59, 72, 188, 0.886)
