@@ -52,5 +52,46 @@
     color: white;
 }
 
+.info__button:hover,
+.info__button:focus,
+.info__button:active{
+    background: black;
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+    background: #f473adef;
+}
+
+@media (max-width: 700px){
+    .cartitem__name{
+        font-size: 0.8rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 8px 13px;
+    }
+
+    .cartitem__price{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px){
+    .cartitem__name{
+        font-size: 0.8rem;
+    }
+
+    .cartitem__select,
+    .cartitem__deleteBtn{
+        padding: 5px 8px;
+    }
+
+    .cartitem__price{
+        font-size: 0.6rem;
+    }
+}
+
+
+
 
 

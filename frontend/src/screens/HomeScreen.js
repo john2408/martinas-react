@@ -1,10 +1,25 @@
 import './HomeScreen.css'
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 // Components
 import Product from "../components/Product";
 
+//Actions
+import {getProducts as listProducts} from '../redux/actions/productActions'
+
 const HomeScreen = () => {
-  return <div className='homescreen'>
+
+  const dispatch = useDispatch();
+
+  const getProducts = useSelector((state) => state.getProducts)
+  const {products, loading, error} = getProducts;
+
+  useEffect(() => {
+    dispatch(listProducts());
+  }, [dispatch] );
+
+  return (<div className='homescreen'>
   
   <h2 className = "homescreen__title">Desayunos Sorpresa</h2>
   
@@ -22,7 +37,7 @@ const HomeScreen = () => {
   
   
   
-  </div>
+  </div>)
 };
 
 export default HomeScreen;
