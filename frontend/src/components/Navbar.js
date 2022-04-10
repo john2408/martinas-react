@@ -1,12 +1,22 @@
 import'./Navbar.css';
 import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 export const Navbar = ({click}) => {
-  return (
+
+    const cart = useSelector((state) => state.cart);
+    const {cartItems} = cart;
+
+
+    const getCartCount = () => {
+        return cartItems.reduce((qty,item) => qty + Number(item.qty), 0)
+    };
+
+    return (
     <nav className= "navbar">
 
         <div className = "navbar__logo">
-            <h2> Martinas Store </h2>
+            <Link to = '/'><img className = "navbar__imgtitle" src = "martinas_title.png" alt="Martinas_title"></img></Link>
         </div>
 
 
@@ -16,7 +26,7 @@ export const Navbar = ({click}) => {
                 <i className='fas fa-shopping-cart'></i>
                 <span>
                     Carrito 
-                    <span className = 'cartlogo__badge'> 0 </span>
+                    <span className = 'cartlogo__badge'> {getCartCount() }</span>
                 </span>
                 </Link>
             </li>
@@ -36,7 +46,7 @@ export const Navbar = ({click}) => {
         </div>
 
     </nav>
-  )
+    )
 };
 
 export default Navbar;

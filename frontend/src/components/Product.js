@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 
 const Product = ({imagePath, title, price, description, productId} ) => {
   return (
+
     <div className="product">
         <img src={imagePath} 
              alt={title}/>
