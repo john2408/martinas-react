@@ -1,12 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-const {getAllProduct, getProductById} = require('../controller/productControllers');
+const {getAllProducts, getProductById} = require('../controller/productControllers');
 
 //@desc     GET all prodtucs from mongo db
 //@route    GET /api/products
 //@acces    Public
-router.get('/', getAllProduct);
+router.get('/', getAllProducts);
 
 //@desc     GET a product by id from db
 //@route    GET /api/products/:id

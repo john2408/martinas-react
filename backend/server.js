@@ -10,6 +10,10 @@ const app = express();
 // move json data from and to react client
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.json({ message: "API running..." });
+  });
+
 app.use('/api/products', productRoutes);
 
 const PORT = process.env.PORT_BACK || 5000;
