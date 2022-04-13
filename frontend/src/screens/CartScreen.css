@@ -4,6 +4,50 @@
     margin: 2rem auto;
 }
 
+.cartscreen__inputdata{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cartscreen__inputdata_form{
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cartscreen__inputdata_form > label{
+    margin-bottom: 6px;
+}
+
+.cartscreen__inputdata_form > input{
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.4);
+}
+
+.cartscreen__inputdata_form > input:focus{
+    outline: 2px solid #f473adef;
+    transition: 180ms box-shadow ease-in-out;
+    border-radius: 2px;
+}
+
+.cartscreen__inputdata_form > select{
+    padding: 7px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
 .cartscreen h2{
     margin-bottom: 1rem;
 }
