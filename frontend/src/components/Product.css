@@ -44,12 +44,14 @@
     padding: 8px 16px;
     border: 1px solid black;
     font-size: 1rem;
+    border-radius: 3px;
 }
 
 .info__button:hover {
     background: #f473adef;
     border: 1px solid #f473adef;
     color: white;
+    border-radius: 3px;
 }
 
 .info__button:hover,

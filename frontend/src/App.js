@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Backdrop from './components/Backdrop';
 import SideDrawer from './components/SideDrawer';
+import WhatsappButton from './components/WhatsappButton';
 
 //Screens
 import HomeScreen from './screens/HomeScreen';
@@ -26,6 +27,7 @@ function App() {
       <Navbar click = {() => setSideToggle(true)}/>
       <SideDrawer show={sideToggle} click = {() => setSideToggle(false)}/>
       <Backdrop show={sideToggle} click = {() => setSideToggle(false)} />
+      <WhatsappButton/>
       <main>
         <Switch>
           <Route exact path = "/" component={HomeScreen}/>
@@ -33,10 +35,9 @@ function App() {
           <Route exact path = "/cart" component={CartScreen}/>
 
         </Switch>
+        
       </main>
-      {/* HomeScreen */}
-      {/* ProductScreen */}
-      {/* CartScreen */}
+
     
     </Router>
   );

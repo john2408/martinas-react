@@ -14,7 +14,7 @@ const Product = ({imagePath, title, price, description, productId} ) => {
             <p className= "info__price">{price.toLocaleString('de') }</p>
         </div>
 
-        <Link to={`/product/${productId}`} className='info__button'> Personalizar</Link>
+        <Link to={`/product/${productId}`} className='info__button'> Comprar</Link>
     </div>
   );
 };
