@@ -86,7 +86,7 @@ const CartScreen = () => {
         console.log(complete_msg)
 
         //return `https://web.whatsapp.com/send?phone=${number}&text=${encodeURI(complete_msg)}&app_absent=0`
-        return `https://wa.me/${number}?text=${encodeURI(message)}`
+        return `https://wa.me/${number}?text=${encodeURI(complete_msg)}`
       };
 
     
