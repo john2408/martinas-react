@@ -33,20 +33,16 @@ const CartScreen = () => {
         return cartItems.reduce((qty, item) => Number(item.qty) + qty,0);
     };
 
-    const addThousandSeparator = (str) => (
-        str.toLocaleString('de')
-    );
+    //const addThousandSeparator = (str) => (
+    //   str.toLocaleString('de')
+    //);
 
     const getCartSubtotal = () => {
         return cartItems.reduce((price,item) => (item.price * item.qty) + price,0);
     };
 
-    const getCartItems = () => {
-        return cartItems.reduce((price,item) => (item.price * item.qty) + price,0);
-    };
 
-
-    const CHARACTER_LIMIT = 100;
+    //const CHARACTER_LIMIT = 100;
 
     const [motiveEmptyError, setMotiveEmptyError] = useState(false);
     const [nameEmptyError, setNameEmptyError] = useState(false);
@@ -104,7 +100,7 @@ const CartScreen = () => {
        
             e.preventDefault();
             let url = MartinasMessage(number, message, motive, name, payment, cartItems);
-            //window.open(url);
+            window.open(url);
         }
       };
 

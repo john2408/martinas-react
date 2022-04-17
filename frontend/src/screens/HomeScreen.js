@@ -20,6 +20,8 @@ const HomeScreen = () => {
     dispatch(listProducts());
   }, [dispatch] );
 
+  console.log(products)
+
   return (<div className='homescreen'>
   <Banner/>
   <h2 className = "homescreen__title">Desayunos Sorpresa</h2>
