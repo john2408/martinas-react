@@ -140,7 +140,7 @@ const CartScreen = () => {
 
                             <label for="fname">Motivo:</label>
                             <input type="text" id="motive" name="motive" onChange={onChange} value={motive} ></input>
-                            <label for="lname">Nombre</label>
+                            <label for="lname">Nombre: </label>
                             <input type="text" id="name" name="name" onChange={onChange} value={name}></input>
                             
                             <label for="lname">Medio de Pago:</label>

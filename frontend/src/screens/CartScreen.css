@@ -41,7 +41,23 @@
     border-radius: 2px;
 }
 
+.cartscreen__inputdata_form > input:hover{
+    background-color: #e7b7cdef;
+    border-radius: 2px;
+    transition: 180ms background-color ease-in-out;
+}
+
 .cartscreen__inputdata_form > select{
+    padding: 7px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 5px;
+}
+
+.cartscreen__inputdata_form > select:hover{
+    background-color: #e7b7cdef;
+    transition: 180ms background-color ease-in-out;
+    border-radius: 5px;
     padding: 7px;
     font-size: 1rem;
     font-family: Arial, Helvetica, sans-serif;

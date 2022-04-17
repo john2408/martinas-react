@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 // Components
 import Product from "../components/Product";
+import Banner from '../components/Banner';
 
 //Actions
 import {getProducts as listProducts} from '../redux/actions/productActions'
@@ -20,8 +21,9 @@ const HomeScreen = () => {
   }, [dispatch] );
 
   return (<div className='homescreen'>
-  
+  <Banner/>
   <h2 className = "homescreen__title">Desayunos Sorpresa</h2>
+  
   
   <div className = "homescreen__products">
    {loading ? <h2>Loading...</h2> 
