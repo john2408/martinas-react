@@ -12,8 +12,6 @@ const app = express();
 // move json data from and to react client
 app.use(express.json());
 
-
-
 app.use('/api/products', productRoutes);
 
 // Server static assets if in production
