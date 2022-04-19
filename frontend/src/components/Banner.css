@@ -1,5 +1,7 @@
 .banner__img{
     max-height: 300px;
+    border-radius: 10px;
+
 }
 
 .banner__legend {
