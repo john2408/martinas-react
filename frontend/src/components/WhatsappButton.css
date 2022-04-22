@@ -7,9 +7,10 @@
     width:80px;
     height:80px;
     background:transparent;
-    right:20px;
-    bottom:20px;
+    right:9px;
+    bottom:100px;
     cursor: pointer;
+    z-index: 50;
 }
 
 .whatsappButton:hover,
@@ -21,10 +22,10 @@
 
 @media(max-width: 600px){
     .whatsappButton{
-        width:60px;
-        height:60px;
-        right:10px;
-        bottom:10px;
+        width:45px;
+        height:45px;
+        right:3px;
+        bottom:30px;
     }
 
 }
