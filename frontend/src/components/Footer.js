@@ -24,7 +24,7 @@ const Footer = () => {
 
         </div>
         <div className = "footer__lower">
-            Copyright 1999-2022. Todos los derechos reservados. 
+            Copyright 2022. Todos los derechos reservados. 
             By: <p className = 'footer__creator' onClick={(e) => window.open("https://de.linkedin.com/in/john-torres-data-science")}> @jtorres</p>
         </div>
     
